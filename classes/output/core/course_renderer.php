@@ -271,7 +271,7 @@ class course_renderer extends \core_course_renderer {
 
         $content .= html_writer::end_tag('div');
 
-        if (isloggedin()) {
+        //if (isloggedin()) {
             $content .= html_writer::start_tag('div', array('class' => 'card-footer'));
 
             // Print enrolmenticons.
@@ -287,7 +287,7 @@ class course_renderer extends \core_course_renderer {
             $content .= html_writer::end_tag('div'); // End pull-right.
 
             $content .= html_writer::end_tag('div'); // End card-footer.
-        }
+        //}
 
         // Display course category if necessary (for example in search results).
         if ($chelper->get_show_courses() == self::COURSECAT_SHOW_COURSES_EXPANDED_WITH_CAT) {
